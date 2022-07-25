@@ -1,0 +1,41 @@
+body {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    background-image: url(assets/cajeoZhangCambs.jpg);
+    width: 30%;
+}
+
+.mainBody {
+    display: flex;
+    flex-flow: column;
+    padding-left: 40%;
+    align-items: center;
+}
+
+.mainText {
+    margin: 10%;
+}
+
+.logoLocation {
+    display: flex;
+    flex-flow: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: slategray;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
