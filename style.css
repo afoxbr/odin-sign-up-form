@@ -1,5 +1,7 @@
 body {
     display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: gainsboro;
 }
 
 .left {
@@ -14,18 +16,39 @@ body {
 
 .mainBody {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     padding-left: 40%;
     align-items: center;
 }
 
 .mainText {
-    margin: 10%;
+    margin-top: 20%;
+    font-weight: 600;
+}
+
+.memberForm {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.formRow {
+    display: flex;
+}
+
+.formEntry {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: smaller;
 }
 
 .logoLocation {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     margin-top: auto;
     margin-bottom: auto;
     justify-content: center;
@@ -35,7 +58,31 @@ body {
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+#picAttribution {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#createAcc {
+    margin: 10%;
+    padding: 10px;
+    background-color: slategrey;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.loginHi {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+#att {
+    position: absolute;
+    bottom: 0%;
 }

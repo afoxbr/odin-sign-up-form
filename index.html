@@ -14,25 +14,37 @@
             <p id="picAttribution">Photo by <a href="https://unsplash.com/@cajeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cajeo Zhang</a> on <a href="https://unsplash.com/s/photos/cambridge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         </div>
         <div class="mainBody">
-            <p class="mainText">This is not a real online service! The Society is not real! They do not control your dreams or the weather.<br>Nonetheless, why not join?</p>
-            <form action="example.com/path" method="post">
-                <div class="formTop">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName">
+            <p class="mainText">This is not a real online service! The Society is not real! They do not control your dreams or the weather.<br><br>Nonetheless, why not join?</p>
+            <form class="memberForm" action="example.com/path" method="post">
+                <div class="formRow">
+                    <div class="formEntry" id="fn">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName">
+                    </div>
+                    <div class="formEntry" id="ln">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName">
+                    </div>
                 </div>
-                <div class="formMiddle">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="phoneNum">Phone Number</label>
-                    <input type="tel" id="phoneNum">
+                <div class="formRow">
+                    <div class="formEntry" id="em">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="formEntry" id="pn">
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="tel" id="phoneNum">
+                    </div>
                 </div>
-                <div class="formBottom">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                    <label for="confirmPass">Confirm Password</label>
-                    <input type="password" id="confirmPass">
+                <div class="formRow">
+                    <div class="formEntry" id="pw">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="formEntry" id="cp">
+                        <label for="confirmPass">Confirm Password</label>
+                        <input type="password" id="confirmPass">
+                    </div>
                 </div>
                 <button type="submit" id="createAcc">Create Account</button>
             </form>
