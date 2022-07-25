@@ -19,36 +19,54 @@
                 <div class="formRow">
                     <div class="formEntry" id="fn">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName">
+                        <input type="text" id="firstName" required>
                     </div>
                     <div class="formEntry" id="ln">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName">
+                        <input type="text" id="lastName" required>
                     </div>
                 </div>
                 <div class="formRow">
                     <div class="formEntry" id="em">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
                     <div class="formEntry" id="pn">
                         <label for="phoneNum">Phone Number</label>
-                        <input type="tel" id="phoneNum">
+                        <input type="tel" id="phoneNum" required>
                     </div>
                 </div>
                 <div class="formRow">
                     <div class="formEntry" id="pw">
                         <label for="password">Password</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" minlength="6" required>
                     </div>
                     <div class="formEntry" id="cp">
                         <label for="confirmPass">Confirm Password</label>
-                        <input type="password" id="confirmPass">
+                        <input type="password" id="confirmPass" minlength="6" required>
                     </div>
                 </div>
-                <button type="submit" id="createAcc">Create Account</button>
+                <p id="errorMess" style="color: red"></p>
+                <button type="submit" id="createAcc" onclick="return passMatch()">Create Account</button>
             </form>
             <p>Already have an account? <a id="logIn" href="login.html">Log in</a></p>
         </div>
+        <script>
+            function passMatch(){
+                let passW = document.getElementById("password").value;
+                let confirmP = document.getElementById("confirmPass").value;
+                if (passW == confirmP){
+                    document.getElementById("password").style.border = "2px solid green";
+                    document.getElementById("confirmPass").style.border = "2px solid green";
+                    document.getElementById("errorMess").innerHTML = '';
+                } else {
+                    document.getElementById("password").style.border = "2px solid red";
+                    document.getElementById("confirmPass").style.border = "2px solid red";
+                    document.getElementById("errorMess").innerHTML = 'Please use the same password'
+                };
+            };
+            const inpuut = document.getElementById("confirmPass");
+            inpuut.addEventListener('change', passMatch);
+        </script>   
     </body>
 </html>

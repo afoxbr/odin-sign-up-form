@@ -43,6 +43,11 @@ body {
     padding-top: 25px;
 }
 
+input:focus {
+    border: blue;
+    background-color: aliceblue;
+}
+
 .formRow {
     display: flex;
 }
